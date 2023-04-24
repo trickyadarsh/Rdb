@@ -74,7 +74,7 @@ async def gen_thumb(videoid, user_id):
         xy = Image.open(wxy)
         a = Image.new('L', [640, 640], 0)
         b = ImageDraw.Draw(a)
-        b.pieslice([(0, 0), (640,640)], 0, 360, fill = 255, outline = "white")
+        b.pieslice([(0, 0), (640,640)], 0, 360, fill = 255, outline = "aqua")
         c = np.array(xy)
         d = np.array(a)
         e = np.dstack((c, d))
@@ -85,7 +85,7 @@ async def gen_thumb(videoid, user_id):
         bg = Image.open(f"AnonX/assets/anonx.png")
         image1 = changeImageSize(1280, 720, youtube)
         image2 = image1.convert("RGBA")
-        background = image2.filter(filter=ImageFilter.BoxBlur(30))
+        background = image2.filter(filter=ImageFilter.BoxBlur(6))
         enhancer = ImageEnhance.Brightness(background)
         background = enhancer.enhance(0.6)
 
@@ -125,10 +125,10 @@ async def gen_thumb(videoid, user_id):
         try:
             draw.text(
                 (450, 25),
-                f"STARTED PLAYING",
+                f"Enjoy Wynk Music",
                 fill="white",
-                stroke_width=3,
-                stroke_fill="grey",
+                stroke_width=2,
+                stroke_fill="red",
                 font=font,
             )
             if para[0]:
@@ -137,8 +137,8 @@ async def gen_thumb(videoid, user_id):
                     ((1280 - text_w) / 2, 530),
                     f"{para[0]}",
                     fill="white",
-                    stroke_width=1,
-                    stroke_fill="white",
+                    stroke_width=2,
+                    stroke_fill="red",
                     font=font,
                 )
             if para[1]:
@@ -147,16 +147,16 @@ async def gen_thumb(videoid, user_id):
                     ((1280 - text_w) / 2, 580),
                     f"{para[1]}",
                     fill="white",
-                    stroke_width=1,
-                    stroke_fill="white",
+                    stroke_width=2,
+                    stroke_fill="red",
                     font=font,
                 )
         except:
             pass
-        text_w, text_h = draw.textsize(f"Duration: {duration} Mins", font=arial)
+        text_w, text_h = draw.textsize(f"Wynk Duration: {duration} Mins", font=arial)
         draw.text(
             ((1280 - text_w) / 2, 660),
-            f"Duration: {duration} Mins",
+            f"Wynk Duration: {duration} Mins",
             fill="white",
             font=arial,
         )
@@ -225,7 +225,7 @@ async def gen_qthumb(videoid, user_id):
         bg = Image.open(f"AnonX/assets/anonx.png")
         image1 = changeImageSize(1280, 720, youtube)
         image2 = image1.convert("RGBA")
-        background = image2.filter(filter=ImageFilter.BoxBlur(30))
+        background = image2.filter(filter=ImageFilter.BoxBlur(20))
         enhancer = ImageEnhance.Brightness(background)
         background = enhancer.enhance(0.6)
 
@@ -265,10 +265,10 @@ async def gen_qthumb(videoid, user_id):
         try:
             draw.text(
                 (455, 25),
-                "ADDED TO QUEUE",
+                "Wynk Add to Queue",
                 fill="white",
-                stroke_width=5,
-                stroke_fill="black",
+                stroke_width=2,
+                stroke_fill="red",
                 font=font,
             )
             if para[0]:
@@ -277,8 +277,8 @@ async def gen_qthumb(videoid, user_id):
                     ((1280 - text_w) / 2, 530),
                     f"{para[0]}",
                     fill="white",
-                    stroke_width=1,
-                    stroke_fill="white",
+                    stroke_width=2,
+                    stroke_fill="red",
                     font=font,
                 )
             if para[1]:
@@ -288,15 +288,15 @@ async def gen_qthumb(videoid, user_id):
                     f"{para[1]}",
                     fill="white",
                     stroke_width=1,
-                    stroke_fill="white",
+                    stroke_fill="red",
                     font=font,
                 )
         except:
             pass
-        text_w, text_h = draw.textsize(f"Duration: {duration} Mins", font=arial)
+        text_w, text_h = draw.textsize(f"Wynk Duration: {duration} Mins", font=arial)
         draw.text(
             ((1280 - text_w) / 2, 660),
-            f"Duration: {duration} Mins",
+            f"Wynk Duration: {duration} Mins",
             fill="white",
             font=arial,
         )
