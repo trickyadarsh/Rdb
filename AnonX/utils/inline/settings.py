@@ -8,23 +8,23 @@ def setting_markup(_):
     buttons = [
         [
             InlineKeyboardButton(
-                text="ᴀᴜᴅɪᴏ ǫᴜᴀʟɪᴛʏ", callback_data="AQ"
+                text="𝑨𝒖𝒅𝒊𝒐 𝑸𝒖𝒂𝒍𝒊𝒕𝒚", callback_data="AQ"
             ),
             InlineKeyboardButton(
-                text="ᴠɪᴅᴇᴏ ǫᴜᴀʟɪᴛʏ", callback_data="VQ"
-            ),
-        ],
-        [
-            InlineKeyboardButton(
-                text="ᴀᴜᴛʜ ᴜsᴇʀs", callback_data="AU"
-            ),
-            InlineKeyboardButton(
-                text="ᴄʟᴇᴀɴ ᴍᴏᴅᴇ", callback_data="CM"
+                text="𝑽𝒊𝒅𝒆𝒐 𝑸𝒖𝒂𝒍𝒊𝒕𝒚", callback_data="VQ"
             ),
         ],
         [
             InlineKeyboardButton(
-                text="• sᴜᴩᴩᴏʀᴛ •", url=f"{SUPPORT_GROUP}",
+                text="𝑨𝒖𝒕𝒉 𝑼𝒔𝒆𝒓𝒔", callback_data="AU"
+            ),
+            InlineKeyboardButton(
+                text="𝑪𝒍𝒆𝒂𝒏 𝑴𝒐𝒅𝒆", callback_data="CM"
+            ),
+        ],
+        [
+            InlineKeyboardButton(
+                text="𝑾𝒚𝒏𝒌 𝑺𝒕𝒖𝒅𝒊𝒐", url=f"https://studio.wynk.in/",
             ),
             InlineKeyboardButton(
                 text=_["CLOSE_BUTTON"], callback_data="close"
