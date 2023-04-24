@@ -9,17 +9,17 @@ def start_pannel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
     buttons = [
         [
             InlineKeyboardButton(
-                text="ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ",
-                url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
+                text="𝑨𝒅𝒅 𝑾𝒚𝒏𝒌  𝑴𝒖𝒔𝒊𝒄 𝑰𝒏 𝑮𝒓𝒐𝒖𝒑 ",
+                url=f"https://t.me/Wynk_Music_TetrisBot?startgroup=true",
             )
         ],
         [
             InlineKeyboardButton(
-                text="ʜᴇʟᴩ",
+                text="𝑯𝒆𝒍𝒑",
                 callback_data="settings_back_helper",
             ),
             InlineKeyboardButton(
-                text="sᴇᴛᴛɪɴɢs", callback_data="settings_helper"
+                text="𝑺𝒆𝒕𝒕𝒊𝒏𝒈𝒔", callback_data="settings_helper"
             ),
         ],
      ]
@@ -30,27 +30,18 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
     buttons = [
         [
             InlineKeyboardButton(
-                text="ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ",
-                url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
+                text="𝑨𝒅𝒅 𝑾𝒚𝒏𝒌  𝑴𝒖𝒔𝒊𝒄 𝑰𝒏 𝑮𝒓𝒐𝒖𝒑 ",
+                url=f"https://t.me/Wynk_Music_TetrisBot?startgroup=true",
             )
         ],
         [
             InlineKeyboardButton(
-                text="ʜᴇʟᴩ", callback_data="settings_back_helper"
-            )
-        ],
-        [
-            InlineKeyboardButton(
-                text="❣ sᴜᴩᴩᴏʀᴛ ❣", url=config.SUPPORT_GROUP
+                text="𝑯𝒆𝒍𝒑", callback_data="settings_back_helper"
             ),
             InlineKeyboardButton(
-                text="🥀 ᴍᴀɪɴᴛᴀɪɴᴇʀ 🥀", user_id=OWNER
-            )
-        ],
-        [
-            InlineKeyboardButton(
-                text="✨ sᴏᴜʀᴄᴇ ✨", url=config.UPSTREAM_REPO
+                text="𝑾𝒚𝒏𝒌", url=f"https://wynk.in/music"
             )
         ],
      ]
     return buttons
+
