@@ -14,30 +14,140 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
     percentage = (played_sec / duration_sec) * 100
     anon = math.floor(percentage)
     if 0 < anon <= 10:
-        bar = "◉—————————"
+        ba = "⚪─────────"
     elif 10 < anon < 20:
-        bar = "—◉————————"
+        ba = "━⚪────────"
     elif 20 <= anon < 30:
-        bar = "——◉———————"
+        ba = "━━⚪───────"
     elif 30 <= anon < 40:
-        bar = "———◉——————"
+        ba = "━━━⚪──────"
     elif 40 <= anon < 50:
-        bar = "————◉—————"
+        ba = "━━━━⚪─────"
     elif 50 <= anon < 60:
-        bar = "—————◉————"
+        ba = "━━━━━⚪────"
     elif 60 <= anon < 70:
-        bar = "——————◉———"
+        ba = "━━━━━━⚪───"
     elif 70 <= anon < 80:
-        bar = "———————◉——"
+        ba = "━━━━━━━⚪──"
     elif 80 <= anon < 95:
-        bar = "————————◉—"
+        ba = "━━━━━━━━⚪─"
     else:
-        bar = "—————————◉"
+        ba = "━━━━━━━━━⚪"
+
+#bar of wynk---------------------------------------
+    if 0 < anon <= 2:
+        bar = "𝑾𝒚𝒏𝒌 𝑴𝒖𝒔𝒊𝒄"
+    elif 2 < anon < 4:
+        bar = "𝐁𝖾𝗌𝗍 𝐅𝖾α𝗍υ𝗋𝖾𝗌"
+    elif 4 <= anon < 6:
+        bar = "𝐒𝗂𝗑 𝐌𝗂ᥣᥣ𝗂ⱺ𐓣 𝐒ⱺ𐓣𝗀𝗌"
+    elif 6 <= anon < 8:
+        bar = "𝐄α𝗌𝗂ᥣ𝗒 𝐒𝗍𝗋𝖾αꭑ"
+    elif 8 <= anon < 10:
+        bar = "𝐋ⱺω-𝐒ρ𝖾𝖾ᑯ 𝐒𝗍𝗋𝖾αꭑ𝗂𐓣𝗀"
+    elif 10 <= anon < 12:
+        bar = "𝐁𝗂𝗀 𝐃α𝗍αᑲα𝗌ɦ"
+    elif 12 <= anon < 14:
+        bar = "𝐅𝗋𝖾𝖾 𝐃ⱺω𐓣ᥣⱺαᑯ 𝐌υ𝗌𝗂𝖼"
+    elif 14 <= anon < 16:
+        bar = "𝐖𝗒𐓣𝗄 𝐅α𝗏ⱺ𝗋𝗂𝗍𝖾 ρᥣα𝗒ᥣ𝗂𝗌𝗍"
+    elif 16 <= anon < 18:
+        bar = "𝐋α𝗀 𝐅𝗋𝖾𝖾 𝐖𝗒𐓣𝗄 "
+    elif 18 <= anon < 20:
+        bar = "𝐖𝗒𐓣𝗄 𝐒𝗍υᑯ𝗂ⱺ"
+    elif 20 <= anon < 22:
+        bar = "𝐖𝗒𐓣𝗄 𝐀ρρ"
+    elif 22 <= anon < 24:
+        bar = "𝐄𐓣𝗃ⱺ𝗒 𝐖𝗒𐓣𝗄 𝐀ρρ 𝐎𐓣 𝐓𝖾ᥣ𝖾𝗀𝗋αꭑ"
+    elif 24 <= anon < 26:
+        bar = "𝐄𐓣𝗃ⱺ𝗒 𝐖𝗒𐓣𝗄 𝐌υ𝗌𝗂𝖼"
+    elif 26 <= anon < 28:
+        bar = "𝑾𝒚𝒏𝒌 𝑴𝒖𝒔𝒊𝒄"
+    elif 28 <= anon < 30:
+        bar = "𝐁𝖾𝗌𝗍 𝐅𝖾α𝗍υ𝗋𝖾𝗌"
+    elif 30 <= anon < 32:
+        bar = "𝐒𝗂𝗑 𝐌𝗂ᥣᥣ𝗂ⱺ𐓣 𝐒ⱺ𐓣𝗀𝗌"
+    elif 32 <= anon < 34:
+        bar = "𝐄α𝗌𝗂ᥣ𝗒 𝐒𝗍𝗋𝖾αꭑ"
+    elif 34 <= anon < 36:
+        bar = "𝐋ⱺω-𝐒ρ𝖾𝖾ᑯ 𝐒𝗍𝗋𝖾αꭑ𝗂𐓣𝗀"
+    elif 36 <= anon < 38:
+        bar = "𝐁𝗂𝗀 𝐃α𝗍αᑲα𝗌ɦ"
+    elif 38 <= anon < 40:
+        bar = "𝐅𝗋𝖾𝖾 𝐃ⱺω𐓣ᥣⱺαᑯ 𝐌υ𝗌𝗂𝖼"
+    elif 40 <= anon < 42:
+        bar = "𝐖𝗒𐓣𝗄 𝐅α𝗏ⱺ𝗋𝗂𝗍𝖾 ρᥣα𝗒ᥣ𝗂𝗌𝗍"
+    elif 42 <= anon < 44:
+        bar = "𝐋α𝗀 𝐅𝗋𝖾𝖾 𝐖𝗒𐓣𝗄"
+    elif 44 <= anon < 46:
+        bar = "𝐖𝗒𐓣𝗄 𝐒𝗍υᑯ𝗂ⱺ"
+    elif 46 <= anon < 48:
+        bar = "𝐄𐓣𝗃ⱺ𝗒 𝐖𝗒𐓣𝗄 𝐀ρρ 𝐎𐓣 𝐓𝖾ᥣ𝖾𝗀𝗋αꭑ"
+    elif 48 <= anon < 50:
+        bar = "𝐁𝖾𝗌𝗍 𝐅𝖾α𝗍υ𝗋𝖾𝗌"
+    elif 50 <= anon < 52:
+        bar = "𝐒𝗂𝗑 𝐌𝗂ᥣᥣ𝗂ⱺ𐓣 𝐒ⱺ𐓣𝗀𝗌"
+    elif 52 <= anon < 54:
+        bar = "𝐄α𝗌𝗂ᥣ𝗒 𝐒𝗍𝗋𝖾αꭑ"
+    elif 54 <= anon < 56:
+        bar = "𝐋ⱺω-𝐒ρ𝖾𝖾ᑯ 𝐒𝗍𝗋𝖾αꭑ𝗂𐓣𝗀"
+    elif 56 <= anon < 58:
+        bar = "𝐁𝗂𝗀 𝐃α𝗍αᑲα𝗌ɦ"
+    elif 58 <= anon < 60:
+        bar = "𝐅𝗋𝖾𝖾 𝐃ⱺω𐓣ᥣⱺαᑯ 𝐌υ𝗌𝗂𝖼"
+    elif 60 <= anon < 62:
+        bar = "𝐋α𝗀 𝐅𝗋𝖾𝖾 𝐖𝗒𐓣𝗄"
+    elif 62 <= anon < 64:
+        bar = "𝐄𐓣𝗃ⱺ𝗒 𝐖𝗒𐓣𝗄 𝐀ρρ 𝐎𐓣 𝐓𝖾ᥣ𝖾𝗀𝗋αꭑ"
+    elif 64 <= anon < 66:
+        bar = "𝐖𝗒𐓣𝗄 𝐅α𝗏ⱺ𝗋𝗂𝗍𝖾 ρᥣα𝗒ᥣ𝗂𝗌𝗍"
+    elif 66 <= anon < 68:
+        bar = "𝐅𝗋𝖾𝖾 𝐃ⱺω𐓣ᥣⱺαᑯ 𝐌υ𝗌𝗂𝖼"
+    elif 68 <= anon < 70:
+        bar = "𝐖𝗒𐓣𝗄 𝐀ρρ"
+    elif 70 <= anon < 72:
+        bar = "𝐖𝗒𐓣𝗄 𝐒𝗍υᑯ𝗂ⱺ"
+    elif 72 <= anon < 74:
+        bar = "𝐁𝖾𝗌𝗍 𝐅𝖾α𝗍υ𝗋𝖾𝗌"
+    elif 74 <= anon < 76:
+        bar = "𝐒𝗂𝗑 𝐌𝗂ᥣᥣ𝗂ⱺ𐓣 𝐒ⱺ𐓣𝗀𝗌"
+    elif 76 <= anon < 78:
+        bar = "𝐄α𝗌𝗂ᥣ𝗒 𝐒𝗍𝗋𝖾αꭑ "
+    elif 78 <= anon < 80:
+        bar = "𝐋ⱺω-𝐒ρ𝖾𝖾ᑯ 𝐒𝗍𝗋𝖾αꭑ𝗂𐓣𝗀"
+    elif 80 <= anon < 82:
+        bar = "𝐁𝗂𝗀 𝐃α𝗍αᑲα𝗌ɦ"
+    elif 82 <= anon < 84:
+        bar = "𝐅𝗋𝖾𝖾 𝐃ⱺω𐓣ᥣⱺαᑯ 𝐌υ𝗌𝗂𝖼"
+    elif 84 <= anon < 86:
+        bar = "𝐋α𝗀 𝐅𝗋𝖾𝖾 𝐖𝗒𐓣𝗄 "
+    elif 86 <= anon < 88:
+        bar = "𝐖𝗒𐓣𝗄 𝐀ρρ"
+    elif 88 <= anon < 90:
+        bar = "𝐖𝗒𐓣𝗄 𝐅α𝗏ⱺ𝗋𝗂𝗍𝖾 ρᥣα𝗒ᥣ𝗂𝗌𝗍"
+    elif 90 <= anon < 92:
+        bar = "𝐖𝗒𐓣𝗄 𝐌υ𝗌𝗂𝖼"
+    elif 92 <= anon < 94:
+        bar = "𝐒ⱺ𐓣𝗀 𝚰𝗌 𝐀ᑲⱺυ𝗍 𝐓ⱺ 𝐄𐓣ᑯ"
+    elif 94 <= anon < 96:
+        bar = "𝐄𐓣𝗃ⱺ𝗒 𝐖𝗒𐓣𝗄 𝐀ρρ 𝐎𐓣 𝐓𝖾ᥣ𝖾𝗀𝗋αꭑ"
+    elif 96 <= anon < 98:
+        bar = "𝐒ⱺ𐓣𝗀 𝚰𝗌 𝐀ᑲⱺυ𝗍 𝐓ⱺ 𝐄𐓣ᑯ"
+    elif 98 <= anon < 99:
+        bar = "𝐓ɦ𝖾 𝐒ⱺ𐓣𝗀 𝚰𝗌 𝐎𝗏𝖾𝗋"
+    else:
+        bar = "𝐖𝐲𝐧𝐤 𝐒𝐭𝐮𝐢𝐝𝐨"
 
     buttons = [
         [
             InlineKeyboardButton(
-                text=f"{played} {bar} {dur}",
+                text=f"{bar}",
+                callback_data="GetTimer",
+            )
+        ],
+        [
+            InlineKeyboardButton(
+                text=f"{played} {ba} {dur}",
                 callback_data="GetTimer",
             )
         ],
@@ -53,7 +163,7 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
                 text="☆", callback_data=f"add_playlist {videoid}"
             ),
             InlineKeyboardButton(
-                text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"
+                text="►►", callback_data=f"ADMIN Skip|{chat_id}"
             ),
             InlineKeyboardButton(
                 text="▢", callback_data=f"ADMIN Stop|{chat_id}"
@@ -61,7 +171,10 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
-                text="✯ ᴄʟᴏsᴇ ✯", callback_data=f"close"
+                text="𝑾𝒚𝒏𝒌", url=f"https://wynk.in/music"
+            ),       
+            InlineKeyboardButton(
+                text="𝑪𝒍𝒐𝒔𝒆", callback_data="close"
             )
         ],
     ]
@@ -74,30 +187,140 @@ def telegram_markup_timer(_, chat_id, played, dur):
     percentage = (played_sec / duration_sec) * 100
     anon = math.floor(percentage)
     if 0 < anon <= 10:
-        bar = "◉—————————"
+        bar = "⚪─────────"
     elif 10 < anon < 20:
-        bar = "—◉————————"
+        ba = "━⚪────────"
     elif 20 <= anon < 30:
-        bar = "——◉———————"
+        ba = "━━⚪───────"
     elif 30 <= anon < 40:
-        bar = "———◉——————"
+        ba = "━━━⚪──────"
     elif 40 <= anon < 50:
-        bar = "————◉—————"
+        ba = "━━━━⚪─────"
     elif 50 <= anon < 60:
-        bar = "—————◉————"
+        ba = "━━━━━⚪────"
     elif 60 <= anon < 70:
-        bar = "——————◉———"
+        ba = "━━━━━━⚪───"
     elif 70 <= anon < 80:
-        bar = "———————◉——"
+        ba = "━━━━━━━⚪──"
     elif 80 <= anon < 95:
-        bar = "————————◉—"
+        ba = "━━━━━━━━⚪─"
     else:
-        bar = "—————————◉"
+        ba = "━━━━━━━━━⚪"
+
+# Wynk bar-----------------------------------------------------------
+    if 0 < anon <= 2:
+        bar = "𝑾𝒚𝒏𝒌 𝑴𝒖𝒔𝒊𝒄"
+    elif 2 < anon < 4:
+        bar = "𝐁𝖾𝗌𝗍 𝐅𝖾α𝗍υ𝗋𝖾𝗌"
+    elif 4 <= anon < 6:
+        bar = "𝐒𝗂𝗑 𝐌𝗂ᥣᥣ𝗂ⱺ𐓣 𝐒ⱺ𐓣𝗀𝗌"
+    elif 6 <= anon < 8:
+        bar = "𝐄α𝗌𝗂ᥣ𝗒 𝐒𝗍𝗋𝖾αꭑ"
+    elif 8 <= anon < 10:
+        bar = "𝐋ⱺω-𝐒ρ𝖾𝖾ᑯ 𝐒𝗍𝗋𝖾αꭑ𝗂𐓣𝗀"
+    elif 10 <= anon < 12:
+        bar = "𝐁𝗂𝗀 𝐃α𝗍αᑲα𝗌ɦ"
+    elif 12 <= anon < 14:
+        bar = "𝐅𝗋𝖾𝖾 𝐃ⱺω𐓣ᥣⱺαᑯ 𝐌υ𝗌𝗂𝖼"
+    elif 14 <= anon < 16:
+        bar = "𝐖𝗒𐓣𝗄 𝐅α𝗏ⱺ𝗋𝗂𝗍𝖾 ρᥣα𝗒ᥣ𝗂𝗌𝗍"
+    elif 16 <= anon < 18:
+        bar = "𝐋α𝗀 𝐅𝗋𝖾𝖾 𝐖𝗒𐓣𝗄 "
+    elif 18 <= anon < 20:
+        bar = "𝐖𝗒𐓣𝗄 𝐒𝗍υᑯ𝗂ⱺ"
+    elif 20 <= anon < 22:
+        bar = "𝐖𝗒𐓣𝗄 𝐀ρρ"
+    elif 22 <= anon < 24:
+        bar = "𝐄𐓣𝗃ⱺ𝗒 𝐖𝗒𐓣𝗄 𝐀ρρ 𝐎𐓣 𝐓𝖾ᥣ𝖾𝗀𝗋αꭑ"
+    elif 24 <= anon < 26:
+        bar = "𝐄𐓣𝗃ⱺ𝗒 𝐖𝗒𐓣𝗄 𝐌υ𝗌𝗂𝖼"
+    elif 26 <= anon < 28:
+        bar = "𝑾𝒚𝒏𝒌 𝑴𝒖𝒔𝒊𝒄"
+    elif 28 <= anon < 30:
+        bar = "𝐁𝖾𝗌𝗍 𝐅𝖾α𝗍υ𝗋𝖾𝗌"
+    elif 30 <= anon < 32:
+        bar = "𝐒𝗂𝗑 𝐌𝗂ᥣᥣ𝗂ⱺ𐓣 𝐒ⱺ𐓣𝗀𝗌"
+    elif 32 <= anon < 34:
+        bar = "𝐄α𝗌𝗂ᥣ𝗒 𝐒𝗍𝗋𝖾αꭑ"
+    elif 34 <= anon < 36:
+        bar = "𝐋ⱺω-𝐒ρ𝖾𝖾ᑯ 𝐒𝗍𝗋𝖾αꭑ𝗂𐓣𝗀"
+    elif 36 <= anon < 38:
+        bar = "𝐁𝗂𝗀 𝐃α𝗍αᑲα𝗌ɦ"
+    elif 38 <= anon < 40:
+        bar = "𝐅𝗋𝖾𝖾 𝐃ⱺω𐓣ᥣⱺαᑯ 𝐌υ𝗌𝗂𝖼"
+    elif 40 <= anon < 42:
+        bar = "𝐖𝗒𐓣𝗄 𝐅α𝗏ⱺ𝗋𝗂𝗍𝖾 ρᥣα𝗒ᥣ𝗂𝗌𝗍"
+    elif 42 <= anon < 44:
+        bar = "𝐋α𝗀 𝐅𝗋𝖾𝖾 𝐖𝗒𐓣𝗄"
+    elif 44 <= anon < 46:
+        bar = "𝐖𝗒𐓣𝗄 𝐒𝗍υᑯ𝗂ⱺ"
+    elif 46 <= anon < 48:
+        bar = "𝐄𐓣𝗃ⱺ𝗒 𝐖𝗒𐓣𝗄 𝐀ρρ 𝐎𐓣 𝐓𝖾ᥣ𝖾𝗀𝗋αꭑ"
+    elif 48 <= anon < 50:
+        bar = "𝐁𝖾𝗌𝗍 𝐅𝖾α𝗍υ𝗋𝖾𝗌"
+    elif 50 <= anon < 52:
+        bar = "𝐒𝗂𝗑 𝐌𝗂ᥣᥣ𝗂ⱺ𐓣 𝐒ⱺ𐓣𝗀𝗌"
+    elif 52 <= anon < 54:
+        bar = "𝐄α𝗌𝗂ᥣ𝗒 𝐒𝗍𝗋𝖾αꭑ"
+    elif 54 <= anon < 56:
+        bar = "𝐋ⱺω-𝐒ρ𝖾𝖾ᑯ 𝐒𝗍𝗋𝖾αꭑ𝗂𐓣𝗀"
+    elif 56 <= anon < 58:
+        bar = "𝐁𝗂𝗀 𝐃α𝗍αᑲα𝗌ɦ"
+    elif 58 <= anon < 60:
+        bar = "𝐅𝗋𝖾𝖾 𝐃ⱺω𐓣ᥣⱺαᑯ 𝐌υ𝗌𝗂𝖼"
+    elif 60 <= anon < 62:
+        bar = "𝐋α𝗀 𝐅𝗋𝖾𝖾 𝐖𝗒𐓣𝗄"
+    elif 62 <= anon < 64:
+        bar = "𝐄𐓣𝗃ⱺ𝗒 𝐖𝗒𐓣𝗄 𝐀ρρ 𝐎𐓣 𝐓𝖾ᥣ𝖾𝗀𝗋αꭑ"
+    elif 64 <= anon < 66:
+        bar = "𝐖𝗒𐓣𝗄 𝐅α𝗏ⱺ𝗋𝗂𝗍𝖾 ρᥣα𝗒ᥣ𝗂𝗌𝗍"
+    elif 66 <= anon < 68:
+        bar = "𝐅𝗋𝖾𝖾 𝐃ⱺω𐓣ᥣⱺαᑯ 𝐌υ𝗌𝗂𝖼"
+    elif 68 <= anon < 70:
+        bar = "𝐖𝗒𐓣𝗄 𝐀ρρ"
+    elif 70 <= anon < 72:
+        bar = "𝐖𝗒𐓣𝗄 𝐒𝗍υᑯ𝗂ⱺ"
+    elif 72 <= anon < 74:
+        bar = "𝐁𝖾𝗌𝗍 𝐅𝖾α𝗍υ𝗋𝖾𝗌"
+    elif 74 <= anon < 76:
+        bar = "𝐒𝗂𝗑 𝐌𝗂ᥣᥣ𝗂ⱺ𐓣 𝐒ⱺ𐓣𝗀𝗌"
+    elif 76 <= anon < 78:
+        bar = "𝐄α𝗌𝗂ᥣ𝗒 𝐒𝗍𝗋𝖾αꭑ "
+    elif 78 <= anon < 80:
+        bar = "𝐋ⱺω-𝐒ρ𝖾𝖾ᑯ 𝐒𝗍𝗋𝖾αꭑ𝗂𐓣𝗀"
+    elif 80 <= anon < 82:
+        bar = "𝐁𝗂𝗀 𝐃α𝗍αᑲα𝗌ɦ"
+    elif 82 <= anon < 84:
+        bar = "𝐅𝗋𝖾𝖾 𝐃ⱺω𐓣ᥣⱺαᑯ 𝐌υ𝗌𝗂𝖼"
+    elif 84 <= anon < 86:
+        bar = "𝐋α𝗀 𝐅𝗋𝖾𝖾 𝐖𝗒𐓣𝗄 "
+    elif 86 <= anon < 88:
+        bar = "𝐖𝗒𐓣𝗄 𝐀ρρ"
+    elif 88 <= anon < 90:
+        bar = "𝐖𝗒𐓣𝗄 𝐅α𝗏ⱺ𝗋𝗂𝗍𝖾 ρᥣα𝗒ᥣ𝗂𝗌𝗍"
+    elif 90 <= anon < 92:
+        bar = "𝐖𝗒𐓣𝗄 𝐌υ𝗌𝗂𝖼"
+    elif 92 <= anon < 94:
+        bar = "𝐒ⱺ𐓣𝗀 𝚰𝗌 𝐀ᑲⱺυ𝗍 𝐓ⱺ 𝐄𐓣ᑯ"
+    elif 94 <= anon < 96:
+        bar = "𝐄𐓣𝗃ⱺ𝗒 𝐖𝗒𐓣𝗄 𝐀ρρ 𝐎𐓣 𝐓𝖾ᥣ𝖾𝗀𝗋αꭑ"
+    elif 96 <= anon < 98:
+        bar = "𝐒ⱺ𐓣𝗀 𝚰𝗌 𝐀ᑲⱺυ𝗍 𝐓ⱺ 𝐄𐓣ᑯ"
+    elif 98 <= anon < 99:
+        bar = "𝐓ɦ𝖾 𝐒ⱺ𐓣𝗀 𝚰𝗌 𝐎𝗏𝖾𝗋"
+    else:
+        bar = "𝐓ɦ𝖾 𝐒ⱺ𐓣𝗀 𝚰𝗌 𝐎𝗏𝖾𝗋"
 
     buttons = [
         [
             InlineKeyboardButton(
-                text=f"{played} {bar} {dur}",
+                text=f"{bar}",
+                callback_data="GetTimer",
+            )
+        ],
+        [
+            InlineKeyboardButton(
+                text=f"{played} {ba} {dur}",
                 callback_data="GetTimer",
             )
         ],
@@ -110,15 +333,23 @@ def telegram_markup_timer(_, chat_id, played, dur):
                 text="II", callback_data=f"ADMIN Pause|{chat_id}"
             ),
             InlineKeyboardButton(
-                text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"
+                text="►►", callback_data=f"ADMIN Skip|{chat_id}"
             ),
             InlineKeyboardButton(
-                text="▢", callback_data=f"ADMIN Stop|{chat_id}"
+                text="▧", callback_data=f"ADMIN Stop|{chat_id}"
             ),
         ],
         [
             InlineKeyboardButton(
-                text="✯ ᴄʟᴏsᴇ ✯", callback_data=f"close"
+                text="𝑷𝒍𝒂𝒚𝒍𝒊𝒔𝒕",
+                callback_data=f"add_playlist {videoid}",
+            ),
+            InlineKeyboardButton(
+                text="𝑾𝒚𝒏𝒌", url=f"https://wynk.in/music")
+        ],
+        [
+            InlineKeyboardButton(
+                text="𝑪𝒍𝒐𝒔𝒆", callback_data=f"close"
             )
         ],
     ]
@@ -139,15 +370,19 @@ def stream_markup(_, videoid, chat_id):
                 text="☆", callback_data=f"add_playlist {videoid}"
             ),
             InlineKeyboardButton(
-                text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"
+                text="►►", callback_data=f"ADMIN Skip|{chat_id}"
             ),
             InlineKeyboardButton(
-                text="▢", callback_data=f"ADMIN Stop|{chat_id}"
+                text="▧", callback_data=f"ADMIN Stop|{chat_id}"
             ),
         ],
         [
             InlineKeyboardButton(
-                text="✯ ᴄʟᴏsᴇ ✯", callback_data=f"close"
+                text="𝑾𝒚𝒏𝒌", url=f"https://wynk.in/music")
+        ],
+        [
+            InlineKeyboardButton(
+                text="𝑪𝒍𝒐𝒔𝒆", callback_data=f"close"
             )
         ],
     ]
@@ -165,15 +400,23 @@ def telegram_markup(_, chat_id):
                 text="II", callback_data=f"ADMIN Pause|{chat_id}"
             ),
             InlineKeyboardButton(
-                text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"
+                text="►►", callback_data=f"ADMIN Skip|{chat_id}"
             ),
             InlineKeyboardButton(
-                text="▢", callback_data=f"ADMIN Stop|{chat_id}"
+                text="▧", callback_data=f"ADMIN Stop|{chat_id}"
             ),
         ],
         [
             InlineKeyboardButton(
-                text="✯ ᴄʟᴏsᴇ ✯", callback_data=f"close"
+                text="𝑷𝒍𝒂𝒚𝒍𝒊𝒔𝒕",
+                callback_data=f"add_playlist {videoid}",
+            ),
+            InlineKeyboardButton(
+                text="𝑾𝒚𝒏𝒌", url=f"https://wynk.in/music")
+        ],
+        [
+            InlineKeyboardButton(
+                text="𝑪𝒍𝒐𝒔𝒆", callback_data=f"close"
             )
         ],
     ]
@@ -297,7 +540,7 @@ close_keyboard = InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        text="✯ ᴄʟᴏsᴇ ✯", callback_data="close"
+                        text="𝑪𝒍𝒐𝒔𝒆", callback_data="close"
                     )
                 ]    
             ]
@@ -320,15 +563,19 @@ def queue_markup(_, videoid, chat_id):
                 text="☆", callback_data=f"add_playlist {videoid}"
             ),
             InlineKeyboardButton(
-                text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"
+                text="", callback_data=f"ADMIN Skip|{chat_id}"
             ),
             InlineKeyboardButton(
-                text="▢", callback_data=f"ADMIN Stop|{chat_id}"
+                text="▧", callback_data=f"ADMIN Stop|{chat_id}"
             ),
         ],
         [
+            
             InlineKeyboardButton(
-                text="✯ ᴄʟᴏsᴇ ✯", callback_data=f"close"
+                text="𝑾𝒚𝒏𝒌", url=f"https://wynk.in/music"
+            ),       
+            InlineKeyboardButton(
+                text="𝑪𝒍𝒐𝒔𝒆", callback_data=f"close"
             )
         ],
     ]
